@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>ML Predictor</head>
+
+<body>
+    <h1>EASY OCR</h1>
+    <form action="{{ url_for('predict_SSC')}}" method="POST" enctype="multipart/form-data" > 
+        <label for="SSC" >Upload ssc marksheet: </label>
+        <input type="file" id="SSC" name="SSC"/>
+        <input type="submit" />
+        </label>
+    </form>
+
+    <form action="{{ url_for('predict_HSC')}}" method="POST" enctype="multipart/form-data" > 
+        <label for="HSC" >Upload hsc marksheet: </label>
+        <input type="file" id="HSC" name="HSC"/>
+        <input type="submit" />
+        </label>
+    </form>
+    <form action="{{ url_for('predict_NED')}}" method="POST" enctype="multipart/form-data" > 
+        <label for="NED" >Upload NED transcript: </label>
+        <input type="file" id="NED" name="NED"/>
+        <input type="submit" />
+        </label>
+    </form>
+
+
+</body>
+
+    </html>
